@@ -1,0 +1,17 @@
+{
+  "name": "mentoring-pro-360",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "pnpm --filter @mentoring/api build && pnpm --filter @mentoring/web build",
+    "lint": "pnpm --filter @mentoring/api lint && pnpm --filter @mentoring/web lint",
+    "test": "pnpm --filter @mentoring/api test",
+    "typecheck": "pnpm --filter @mentoring/api typecheck && pnpm --filter @mentoring/web typecheck",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
